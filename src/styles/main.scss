@@ -1,0 +1,27 @@
+@import 'font';
+@import 'var';
+
+
+
+body {
+    font-family: $font;
+}
+
+a {
+    transform: $tr;
+    text-decoration: none;
+    color: $lightgrey;
+}
+
+a:hover {
+    color: $accent;
+}
+
+$bg: #eee;
+
+.box {
+    background-color: $bg;
+    &__title {
+        color: #f00;
+    }
+}
