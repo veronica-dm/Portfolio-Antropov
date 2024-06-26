@@ -6,11 +6,407 @@
     <title>Портфолио Александра Антропова</title>
 </head>
 <body>
+    <div class="container-wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="hfwrapper">
+                    <nav class="nav">
+                        <a class="nav__link" href="#about-id">Обо мне</a>
+                        <a class="nav__link" href="#portfolio-id">Портфолио</a>
+                        <a class="nav__link" href="#steps-id">Этапы работ</a>
+                        <a class="nav__link" href="#price-id">Цены</a>
+                        <a class="nav__link" href="#">Обратная связь</a>
+                    </nav>
+                    <div class="contacts">
+                        <a class="contacts__link" href="tel:+7923 777-77-77">8 923 777-77-77</a>
+                        <a class="contacts__link" href="mailto:alexdev@gmail.com">alexdev@gmail.com</a>
+                    </div>  
+                </div>
+                
+            </header>
     
+            <section class="banner">
+                <img class="banner__img" src="./images/banner.jpg" alt="">          
+            </section>
+        
+            <section class="discuss">
+                <div class="discuss__name">
+                    <h2 class="discuss__surname h3-title">Александр Антропов</h2>
+                    <h1 class="discuss__spec h1-title">web-разработчик</h1>
+                </div>
+               
+                <div class="discuss__social">
+                    <a class="discuss-project" href="#" onclick="openModal()">
+                        <p class="discuss-project__write">Обсудить проект</p>
+                        <img src="./images/ui/arrow.png" alt="стрелка">
+                    </a>
+                    <div class="discuss__contacts">
+                        <a class="discuss__contacts-item" href="#">Vk</a>
+                        <a class="discuss__contacts-item" href="#">Youtube</a>
+                        <a class="discuss__contacts-item" href="#">Linkedin</a>
+                    </div>
+                </div>
     
-    <div class="box">
-        <h2 class="box__title">Привет</h2>
-        <img src="images/banner.jpg" alt="">
+                <div class="discuss__type">
+                    <div class="discuss__type-item">
+                        <p class="discuss__type-name">FRONT-END</p>
+                        <p class="discuss__type-desc">HTML+CSS+JS кодирование дизайнов любой сложности</p>
+                    </div>
+                    <div class="discuss__type-item">
+                        <p class="discuss__type-name">Back-end</p>
+                        <p class="discuss__type-desc">Разработка сложной back-end логики для готового front-end</p>
+                    </div>
+                    <div class="discuss__type-item">
+                        <p class="discuss__type-name">WORDPRESS</p>
+                        <p class="discuss__type-desc">Разработка сайтов - от блога до интернет магазина</p>
+                    </div>
+                    <div class="discuss__type-item">
+                        <p class="discuss__type-name">SEO продвижение</p>
+                        <p class="discuss__type-desc">Качественное улучшение позиций сайта в поисковой выдаче</p>
+                    </div>
+                </div>
+                
+            </section>
+    
+            <section class="about" id="about-id">
+                <p class="h2-title">обо мне</p>
+                <p class="about__desc">Создаю только эффективные решения, которые работают на результат:от одностраничных сайтов, до крупных интернет-порталов.</p>
+            </section>
+    
+            <section class="features">
+                <div class="features__empty"></div>
+                <div class="features__blok">
+                    <div class="features__item">
+                        <p class="features__title">Контроль</p>
+                        <p class="features__desc">Предоставление результатов на каждом этапе работы с возможностью внести правки</p>
+                    </div>
+                    <div class="features__item">
+                        <p class="features__title">Ответственность</p>
+                        <p class="features__desc">Фриланс как основная деятельность, что означает полную отдачу в процессе работы над заказом</p>
+                    </div>
+                    <div class="features__item">
+                        <p class="features__title">Исполнительность</p>
+                        <p class="features__desc">Внимательность ко всем требованиям заказчика и прояснение любых моментов</p>
+                    </div>
+                    <div class="features__item">
+                        <p class="features__title">Качество</p>
+                        <p class="features__desc">Высокое качество как графических материалов, так и внутренних алгоритмов работы сайта</p>
+                    </div>
+                </div>
+                
+               
+            </section>
+    
+            <section class="steps" id="steps-id">
+                <div class="steps__item">
+                    <div class="steps__title">
+                        <p class="h3-title">01</p>
+                        <p class="h3-title">Вы заказываете сайт</p>
+                    </div>
+                    <div class="steps__descblok">
+                        <p class="steps__desc">Связываетесь со мной по телефону или через заявку на сайте</p>
+                    </div>
+                </div>
+                <div class="steps__item">
+                    <div class="steps__title">
+                        <p class="h3-title">02</p>
+                        <p class="h3-title">Обговариваем детали</p>
+                    </div>
+                    <div class="steps__descblok">
+                        <p class="steps__desc">Созваниваемся или списываемся любым удобным для вас способом</p>
+                    </div>
+                </div>
+                <div class="steps__item">
+                    <div class="steps__title">
+                        <p class="h3-title">03</p>
+                        <p class="h3-title"> Этап программирования</p>
+                    </div>
+                    <div class="steps__descblok">
+                        <p class="steps__desc">Верстаю сайт по вашему проекту пиксель в пиксель</p>
+                    </div>
+                </div>
+                
+            </section>
+    
+            <section class="portfolio-name" id="portfolio-id">
+                <p class="h1-title">Портфолио</p>
+            </section>
+            
+        </div>
     </div>
+
+    <div class="container-wrapper _dark">
+        <div class="container">
+            <section class="portfolio">
+                <div class="portfolio__item">
+                    <div class="portfolio__text">
+                        <p class="portfolio__title">Agata Bielen</p>
+                        <ul class="portfolio__task">
+                        <li>– верстка по макету из Figma</li>
+                        <li>– наполнение сайта контентом</li>
+                        <li>– внедрена функция добавления видео</li>
+                        </ul>
+                        <p class="portfolio__time">Затрачено времени: 5 рабочих дней</p>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="./images/agata.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="portfolio__item">
+                    <div class="portfolio__text">
+                        <p class="portfolio__title">Lemon</p>
+                        <ul class="portfolio__task">
+                        <li>– верстка по макету из PSD</li>
+                        <li>– доступен функционал получения заказов</li>
+                        <li>– реализована кнопка «Заказать в 1 клик»</li>
+                        </ul>
+                        <p class="portfolio__time">Затрачено времени: 7 рабочих дней</p>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="./images/lemon.jpg" alt="">
+                    </div>
+                </div>
+            </section>       
+                
+            </section>
+             <section class="other-task">
+            <p class="other-task__text">
+                Помимо создания сайтов и посадочных страниц я занимаюсь: настройкой контекстной рекламы в системах Яндекс.Директ и Google AdWords, а так же поисковым продвижением сайтов
+            </p>
+            </section>
+
+            <section class="features-image">
+                <div class="features-image__item">
+                    <img src="./images/ui/features/price.svg" alt="">
+                    <div class="features-image__text">
+                        <p class="features-image__title">Актуальные цены</p>
+                        <p class="features-image__desc">Ничего лишнего, без переплат, 100% отработка ваших денег</p>
+                    </div>
+                </div>
+                <div class="features-image__item">
+                    <img src="./images/ui/features/plus.svg" alt="">
+                    <div class="features-image__text">
+                        <p class="features-image__title">Более 2-х лет опыта</p>
+                        <p class="features-image__desc">Это моя основная деятельность, создано более 150+ сайтов</p>
+                    </div>
+                </div>
+                <div class="features-image__item">
+                    <img src="./images/ui/features/history.svg" alt="">
+                    <div class="features-image__text">
+                        <p class="features-image__title">Оптимальные сроки</p>
+                        <p class="features-image__desc">Создание сайта любой сложности в самые сжатые сроки</p>
+                    </div>
+                </div>
+                <div class="features-image__item">
+                    <img src="./images/ui/features/telephone.svg" alt="">
+                    <div class="features-image__text">
+                        <p class="features-image__title">Всегда на связи</p>
+                        <p class="features-image__desc">Не теряюсь и не проматываю сроки. Подхожу ответственно</p>
+                    </div>
+                </div>
+                <div class="features-image__item">
+                    <img src="./images/ui/features/code.svg" alt="">
+                    <div class="features-image__text">
+                        <p class="features-image__title">Чистый код</p>
+                        <p class="features-image__desc">HTML код без всего лишнего, плюс адаптив под все устройства</p>
+                    </div>
+                </div>
+                <div class="features-image__item">
+                    <img src="./images/ui/features/support.svg" alt="">
+                    <div class="features-image__text">
+                        <p class="features-image__title">Поддержка сайта</p>
+                        <p class="features-image__desc">Быстро устраню любую проблему на вашем сайте</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="technologies">
+                <div class="technologies__item">
+                    <img src="./images/polygon.png" alt="">
+                </div>
+                <div class="technologies__item">
+                    <img src="./images/polygon.png" alt="">
+                </div>
+                <div class="technologies__item">
+                    <img src="./images/polygon.png" alt="">
+                </div>
+                <div class="technologies__item">
+                    <img src="./images/polygon.png" alt="">
+                </div>
+                <div class="technologies__item">
+                    <img src="./images/polygon.png" alt="">
+                </div>
+                <div class="technologies__item">
+                    <img src="./images/polygon.png" alt="">
+                </div>
+                <div class="technologies__item">
+                    <img src="./images/polygon.png" alt="">
+                </div>
+                <div class="technologies__item">
+                    <img src="./images/polygon.png" alt="">
+                </div>
+            </section>
+
+            <section class="tarif">
+                <p class="h2-title tarif__name">Тарифы</p>
+                <p class="tarif__desc">Представленные ниже цены зависят не только от того какой сайт вы хотите. Конечная цена будет озвучена после прочтения Вашего ТЗ</p>
+            </section>
+
+            <section class="price" id="price-id">
+                <div class="price__item">
+                    <div class="price__left">
+                        <div class="price__descblok">
+                            <p class="price__title">Разработка лэндинга или сайт визитки</p>
+                            <p class="price__desc">Небольшой сайт состоящий из одной страницы</p>
+                        </div>
+                        <a class="discuss-project dark" href="#" onclick="openModal()">
+                            <p class="discuss-project__write">Обсудить проект</p>
+                            <img src="./images/ui/arrow.png" alt="стрелка">
+                        </a>
+                        
+                    </div>
+                    <div class="price__right">
+                        <div class="price__include">
+                            <p class="price__includetext">Что входит</p>
+                            <ul class="price__ul">
+                                <li>Сайт на CMS WordPress</li>
+                                <li>Одна посадочная страница</li>
+                                <li>От 7 дней</li>
+                            </ul>
+                        </div>
+                        <p class="price__price">От 7 000 Р</p>
+                    </div>
+                </div>
+
+                <div class="price__item">
+                    <div class="price__left">
+                        <div class="price__descblok">
+                            <p class="price__title">Разработка корпоративного  сайта</p>
+                            <p class="price__desc">Небольшой сайт с n-количеством страниц</p>
+                        </div>
+                        <a class="discuss-project dark" href="#" onclick="openModal()">
+                            <p class="discuss-project__write">Обсудить проект</p>
+                            <img src="./images/ui/arrow.png" alt="стрелка">
+                        </a>
+                        
+                    </div>
+                    <div class="price__right">
+                        <div class="price__include">
+                            <p class="price__includetext">Что входит</p>
+                            <ul class="price__ul">
+                                <li>Сайт на CMS WordPress</li>
+                                <li>От 2-10 страниц </li>
+                                <li>От 15 дней</li>
+                            </ul>
+                        </div>
+                        <p class="price__price">От 10 000 Р</p>
+                    </div>
+                </div>
+
+                <div class="price__item">
+                    <div class="price__left">
+                        <div class="price__descblok">
+                            <p class="price__title">Разработка интернет - магазина</p>
+                            <p class="price__desc">Полноценный каталог вашей продукции</p>
+                        </div>
+                        <a class="discuss-project dark" href="#" onclick="openModal()">
+                            <p class="discuss-project__write">Обсудить проект</p>
+                            <img src="./images/ui/arrow.png" alt="стрелка">
+                        </a>
+                        
+                    </div>
+                    <div class="price__right">
+                        <div class="price__include">
+                            <p class="price__includetext">Что входит</p>
+                            <ul class="price__ul">
+                                <li>Сайт на CMS WordPress</li>
+                                <li>От 2-10 страниц, корзина, карточка товара</li>
+                                <li>От 10 дней</li>
+                            </ul>
+                        </div>
+                        <p class="price__price">От 15 000 Р</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="talk">
+                <p class="h2-title talk__name">Расскажите о&nbsp;своем проекте</p>
+                <p class="tarif__desc">Воспользуйтесь формой обратной связи, чтобы обсудить ваш проект, заполните все поля, и я свяжусь с&nbsp;вами&nbsp;в ближайшее время</p>
+            </section>
+
+            <section class="form">
+                <div class="form__contacts">
+                    <a class="form__contacts-item" href="#">Vk</a>
+                    <a class="form__contacts-item" href="#">Youtube</a>
+                    <a class="form__contacts-item" href="#">Linkedin</a>
+                </div>
+                <div class="form__blok">
+                    <form class="form__form" action="post">
+                        <label for="phone">Телефон или почта:</label>
+                        <input class="form__input" name="phone" placeholder="Введите телефон" id="phone">
+                        <label for="connection">Выберите удобный способ связи:</label>
+                        <select class="form__input" id="connection">
+                            <option value="telegram" selected>Телеграм</option>
+                            <option value="whatsapp">WhatsApp</option>
+                            <option value="viber" >Viber</option>
+                            <option value="phone">Звонок на телефон</option>
+                            <option value="sms">SMS сообщение</option>
+                        </select>
+                        <button class="form__btn" type="submit" name="submit">Отправить</button>
+                    </form>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="hfwrapper _footer">
+                    <nav class="nav">
+                        <a class="nav__link" href="#about-id">Обо мне</a>
+                        <a class="nav__link" href="#portfolio-id">Портфолио</a>
+                        <a class="nav__link" href="#steps-id">Этапы работ</a>
+                        <a class="nav__link" href="#price-id">Цены</a>
+                        <a class="nav__link" href="#">Обратная связь</a>
+                    </nav>
+                    <div class="contacts">
+                        <a class="contacts__link" href="tel:+7923 777-77-77">8 923 777-77-77</a>
+                        <a class="contacts__link" href="mailto:alexdev@gmail.com">alexdev@gmail.com</a>
+                    </div>  
+                </div>
+
+                <div class="footer__copy">
+                    <p class="footer__copy-item">© 2020, Все права защищены</p>
+                    <p class="footer__copy-item">Сделано в рамках курса учебной платформы Annblok</p>
+                </div>
+                
+            </footer>
+        </div>
+
+       
+
+    </div>
+   
+
+    
+    
+        
+            
+        
+    
+  
+ 
+
+    
+        
+    <div class="modal" id="modal">
+        <nav class="nav _modal">
+            <a href="#" class="nav-link">Обо мне</a>
+            <a href="#" class="nav-link">Портфолио</a>
+            <a href="#" class="nav-link">Этапы работ</a>
+            <a href="#" class="nav-link">Цены</a>
+            <a href="#" class="nav-link">Обратная связь</a>
+        </nav>
+        <button class="modal-close" onclick="closeModal()"></button>
+    </div>
+    
+    
 </body>
 </html>
