@@ -9,19 +9,19 @@
     <div class="container-wrapper">
         <div class="container">
             <header class="header">
-                <div class="hfwrapper">
-                    <nav class="nav">
-                        <a class="nav__link" href="#about-id">Обо мне</a>
-                        <a class="nav__link" href="#portfolio-id">Портфолио</a>
-                        <a class="nav__link" href="#steps-id">Этапы работ</a>
-                        <a class="nav__link" href="#price-id">Цены</a>
-                        <a class="nav__link" href="#">Обратная связь</a>
-                    </nav>
-                    <div class="contacts">
-                        <a class="contacts__link" href="tel:+7923 777-77-77">8 923 777-77-77</a>
-                        <a class="contacts__link" href="mailto:alexdev@gmail.com">alexdev@gmail.com</a>
-                    </div>  
-                </div>
+                
+                <nav class="nav">
+                    <a class="nav__link" href="#about-id">Обо мне</a>
+                    <a class="nav__link" href="#portfolio-id">Портфолио</a>
+                    <a class="nav__link" href="#steps-id">Этапы работ</a>
+                    <a class="nav__link" href="#price-id">Цены</a>
+                    <a class="nav__link" href="#">Обратная связь</a>
+                </nav>
+                <div class="contacts">
+                    <a class="contacts__link" href="tel:+7923 777-77-77">8 923 777-77-77</a>
+                    <a class="contacts__link" href="mailto:alexdev@gmail.com">alexdev@gmail.com</a>
+                 </div>  
+                
                 
             </header>
     
@@ -101,7 +101,7 @@
                 <div class="steps__item">
                     <div class="steps__title">
                         <p class="h3-title">01</p>
-                        <p class="h3-title">Вы заказываете сайт</p>
+                        <p class="h3-title">Вы заказываете&nbsp;сайт</p>
                     </div>
                     <div class="steps__descblok">
                         <p class="steps__desc">Связываетесь со мной по телефону или через заявку на сайте</p>
@@ -148,8 +148,8 @@
                         </ul>
                         <p class="portfolio__time">Затрачено времени: 5 рабочих дней</p>
                     </div>
-                    <div class="portfolio__img">
-                        <img src="./images/agata.jpg" alt="">
+                    <div>
+                        <img class="portfolio__img" src="./images/agata.jpg" alt="">
                     </div>
                 </div>
 
@@ -163,8 +163,8 @@
                         </ul>
                         <p class="portfolio__time">Затрачено времени: 7 рабочих дней</p>
                     </div>
-                    <div class="portfolio__img">
-                        <img src="./images/lemon.jpg" alt="">
+                    <div>
+                        <img class="portfolio__img" src="./images/lemon.jpg" alt="">
                     </div>
                 </div>
             </section>       
@@ -223,28 +223,28 @@
 
             <section class="technologies">
                 <div class="technologies__item">
-                    <img src="./images/polygon.png" alt="">
+                    <img src="./images/technologies/html5.svg" alt="html5">
                 </div>
                 <div class="technologies__item">
-                    <img src="./images/polygon.png" alt="">
+                    <img src="./images/technologies/css.svg" alt="css">
                 </div>
                 <div class="technologies__item">
-                    <img src="./images/polygon.png" alt="">
+                    <img src="./images/technologies/javascript.svg" alt="javascript">
                 </div>
                 <div class="technologies__item">
-                    <img src="./images/polygon.png" alt="">
+                    <img src="./images/technologies/jquery.svg" alt="jquery">
                 </div>
                 <div class="technologies__item">
-                    <img src="./images/polygon.png" alt="">
+                    <img src="./images/technologies/bootstrap.svg" alt="bootstrap">
                 </div>
                 <div class="technologies__item">
-                    <img src="./images/polygon.png" alt="">
+                    <img src="./images/technologies/php.svg" alt="php">
                 </div>
                 <div class="technologies__item">
-                    <img src="./images/polygon.png" alt="">
+                    <img src="./images/technologies/vue.svg" alt="vue">
                 </div>
                 <div class="technologies__item">
-                    <img src="./images/polygon.png" alt="">
+                    <img src="./images/technologies/wordpress.svg" alt="wordpress">
                 </div>
             </section>
 
@@ -358,7 +358,7 @@
                 </div>
             </section>
             <footer class="footer">
-                <div class="hfwrapper _footer">
+                <div class="footer__wrapper">
                     <nav class="nav">
                         <a class="nav__link" href="#about-id">Обо мне</a>
                         <a class="nav__link" href="#portfolio-id">Портфолио</a>
@@ -369,12 +369,11 @@
                     <div class="contacts">
                         <a class="contacts__link" href="tel:+7923 777-77-77">8 923 777-77-77</a>
                         <a class="contacts__link" href="mailto:alexdev@gmail.com">alexdev@gmail.com</a>
-                    </div>  
+                    </div> 
                 </div>
-
                 <div class="footer__copy">
                     <p class="footer__copy-item">© 2020, Все права защищены</p>
-                    <p class="footer__copy-item">Сделано в рамках курса учебной платформы Annblok</p>
+                    <p class="footer__copy-item">Сделано в рамках курса учебной платформы <a class="footer__link" href="https://cabinet.frontendblok.com/">Annblok</a></p>
                 </div>
                 
             </footer>
@@ -396,7 +395,7 @@
 
     
         
-    <div class="modal" id="modal">
+    <div class="modalMenu" id="modalMenu">
         <nav class="nav _modal">
             <a href="#" class="nav-link">Обо мне</a>
             <a href="#" class="nav-link">Портфолио</a>
@@ -404,7 +403,12 @@
             <a href="#" class="nav-link">Цены</a>
             <a href="#" class="nav-link">Обратная связь</a>
         </nav>
-        <button class="modal-close" onclick="closeModal()"></button>
+        <button class="modal-close" onclick="closeModalMenu()"></button>
+    </div>
+
+    <div class="modal" id="modal">
+        
+        <button class="modal-close" onclick="closeModalMenu()"></button>
     </div>
     
     
