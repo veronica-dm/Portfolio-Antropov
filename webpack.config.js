@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { library } = require('webpack');
 
 const devServer = (isDev) => !isDev ? {} : {
     devServer: {
@@ -16,6 +17,9 @@ module.exports = ({develop}) => ({
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    // publicPath:'/dist/',
+    // libraryTarget: 'window',
+    // library: 'EntryPoint',
     //assetModuleFilename: 'images/[hash][ext][query]',
     clean: true,
   },

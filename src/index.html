@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио Александра Антропова</title>
+    <script type="module" src="../dist/bundle.js"></script>
 </head>
 <body>
     <div class="container-wrapper">
         <div class="container">
             <header class="header">
                 
-                <nav class="nav">
+                <nav class="nav nav-header">
                     <a class="nav__link" href="#about-id">Обо мне</a>
                     <a class="nav__link" href="#portfolio-id">Портфолио</a>
                     <a class="nav__link" href="#steps-id">Этапы работ</a>
                     <a class="nav__link" href="#price-id">Цены</a>
                     <a class="nav__link" href="#">Обратная связь</a>
                 </nav>
-                <div class="contacts">
+                <div class="contacts _header">
                     <a class="contacts__link" href="tel:+7923 777-77-77">8 923 777-77-77</a>
                     <a class="contacts__link" href="mailto:alexdev@gmail.com">alexdev@gmail.com</a>
                  </div>  
+
+                 <div class="burger">
+                    <a class="burger__contact" href="tel:+7923 777-77-77">8 923 777-77-77</a>
+                    <button class="burger__menu" onclick="openModalMenu()"></button>
+                 </div>
                 
                 
             </header>
@@ -100,8 +106,8 @@
             <section class="steps" id="steps-id">
                 <div class="steps__item">
                     <div class="steps__title">
-                        <p class="h3-title">01</p>
-                        <p class="h3-title">Вы заказываете&nbsp;сайт</p>
+                        <p class="steps__h3">01</p>
+                        <p class="steps__h3">Вы заказываете&nbsp;сайт</p>
                     </div>
                     <div class="steps__descblok">
                         <p class="steps__desc">Связываетесь со мной по телефону или через заявку на сайте</p>
@@ -109,8 +115,8 @@
                 </div>
                 <div class="steps__item">
                     <div class="steps__title">
-                        <p class="h3-title">02</p>
-                        <p class="h3-title">Обговариваем детали</p>
+                        <p class="steps__h3">02</p>
+                        <p class="steps__h3">Обговариваем детали</p>
                     </div>
                     <div class="steps__descblok">
                         <p class="steps__desc">Созваниваемся или списываемся любым удобным для вас способом</p>
@@ -118,8 +124,8 @@
                 </div>
                 <div class="steps__item">
                     <div class="steps__title">
-                        <p class="h3-title">03</p>
-                        <p class="h3-title"> Этап программирования</p>
+                        <p class="steps__h3">03</p>
+                        <p class="steps__h3"> Этап программирования</p>
                     </div>
                     <div class="steps__descblok">
                         <p class="steps__desc">Верстаю сайт по вашему проекту пиксель в пиксель</p>
@@ -257,7 +263,7 @@
                 <div class="price__item">
                     <div class="price__left">
                         <div class="price__descblok">
-                            <p class="price__title">Разработка лэндинга или сайт визитки</p>
+                            <p class="price__title">Разработка<br>лэндинга или сайт визитки</p>
                             <p class="price__desc">Небольшой сайт состоящий из одной страницы</p>
                         </div>
                         <a class="discuss-project dark" href="#" onclick="openModal()">
@@ -282,7 +288,7 @@
                 <div class="price__item">
                     <div class="price__left">
                         <div class="price__descblok">
-                            <p class="price__title">Разработка корпоративного  сайта</p>
+                            <p class="price__title">Разработка<br>корпоративного  сайта</p>
                             <p class="price__desc">Небольшой сайт с n-количеством страниц</p>
                         </div>
                         <a class="discuss-project dark" href="#" onclick="openModal()">
@@ -307,7 +313,7 @@
                 <div class="price__item">
                     <div class="price__left">
                         <div class="price__descblok">
-                            <p class="price__title">Разработка интернет - магазина</p>
+                            <p class="price__title">Разработка<br>интернет - магазина</p>
                             <p class="price__desc">Полноценный каталог вашей продукции</p>
                         </div>
                         <a class="discuss-project dark" href="#" onclick="openModal()">
@@ -359,7 +365,7 @@
             </section>
             <footer class="footer">
                 <div class="footer__wrapper">
-                    <nav class="nav">
+                    <nav class="nav nav-footer">
                         <a class="nav__link" href="#about-id">Обо мне</a>
                         <a class="nav__link" href="#portfolio-id">Портфолио</a>
                         <a class="nav__link" href="#steps-id">Этапы работ</a>
@@ -403,12 +409,21 @@
             <a href="#" class="nav-link">Цены</a>
             <a href="#" class="nav-link">Обратная связь</a>
         </nav>
-        <button class="modal-close" onclick="closeModalMenu()"></button>
+        <div class="contacts _modal">
+            <a class="contacts__link" href="tel:+7923 777-77-77">8 923 777-77-77</a>
+            <a class="contacts__link" href="mailto:alexdev@gmail.com">alexdev@gmail.com</a>
+         </div> 
+         <div class="discuss__contacts _modal">
+            <a class="discuss__contacts-item _modal" href="#">Vk</a>
+            <a class="discuss__contacts-item _modal" href="#">Youtube</a>
+            <a class="discuss__contacts-item _modal" href="#">Linkedin</a>
+        </div> 
+        <button class="modalMenu-close" onclick="closeModalMenu()"></button>
     </div>
 
     <div class="modal" id="modal">
         
-        <button class="modal-close" onclick="closeModalMenu()"></button>
+        <button class="modal-close" onclick="closeModal()"></button>
     </div>
     
     
