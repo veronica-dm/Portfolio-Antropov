@@ -1,23 +1,23 @@
-//module.exports = {
+module.exports = {
     // testf: function () {console.log("bingo!!!!!");}
-    function  openModalMenu() {
+    openModalMenu: function () {
         document.getElementById("modalMenu").style.top = "0px";
-    }
+    },
     
-    function closeModalMenu() {
+    closeModalMenu: function () {
         document.getElementById("modalMenu").style.top = "-400px";
-    }
+    },
     
-    function openModal() {
+    openModal: function () {
         console.log("ha-ha-ha");
         document.getElementById("modal").style.top = "0px";
-    }
+    },
     
-    function closeModal() {
+    closeModal: function () {
         document.getElementById("modal").style.top = "-400px";
-    }
+    },
     
-//};
+};
 
 
 
