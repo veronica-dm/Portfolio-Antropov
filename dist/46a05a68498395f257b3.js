@@ -1,0 +1,1 @@
+(()=>{"use strict";test=function(){console.log("BINGO")}})();

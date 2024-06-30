@@ -25,7 +25,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1140px;
+    max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -61,6 +61,12 @@ p, h1, h2, h3 {
 .nav {
     display: flex;
     gap: 28px;
+    @media(max-width:$r_desk_min) {
+        gap: 14px;
+    }
+    &__link {
+        font-size:clamp(10px, 5vw - 0.75rem, 14px);
+    }
     
     
 }
@@ -77,10 +83,10 @@ p, h1, h2, h3 {
     }
 }
 
-.nav-footer > a {
-    font-size:clamp(10px, 5vw - 0.75rem, 14px);
+// .nav-footer > a {
+//     font-size:clamp(10px, 5vw - 0.75rem, 14px);
     
-}
+// }
 
 .burger {
     display: none;
@@ -142,15 +148,14 @@ p, h1, h2, h3 {
     margin-top: 20px;
     margin-bottom: 114px;
     &__img {
-        object-fit: cover;
-        height: auto;
+        width: 100%;
     }
-    @media(max-width:$r_desk_1190) {
-        &__img {
+    // @media(max-width:$r_desk_1190) {
+    //     &__img {
             
-            width: clamp(340px, 97vw, 1140px);
-        }
-    }
+    //         width: clamp(340px, 97vw, 1140px);
+    //     }
+    // }
     
 }
 
@@ -917,6 +922,30 @@ p, h1, h2, h3 {
         //font-size: 42px;
         font-size: clamp(22px, 3vw + 0.75rem, 42px);
         font-weight: 600;
+        position: relative;
+        z-index: 2;
+        &::before {
+            content: '';
+            display: block;
+            width:90px;
+            height:90px;
+            //background-image: url(../images/ellipse.png);
+            background-color: #D40000;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 50%;
+            position: absolute;
+            left: -8%;
+            //top:-61px;
+            top: -30%;
+            z-index: -1;
+            @media(max-width:$r_tab) {
+                width:40px;
+                height:40px;
+                top: 7%;
+                
+            }
+        }
     }
 }
 
