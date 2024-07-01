@@ -418,11 +418,27 @@
             <a class="discuss__contacts-item _modal" href="#">Youtube</a>
             <a class="discuss__contacts-item _modal" href="#">Linkedin</a>
         </div> 
-        <button class="modalMenu-close" onclick="closeModalMenu()"></button>
+        <button class="modal-close" onclick="closeModalMenu()"></button>
     </div>
 
     <div class="modal" id="modal">
-        
+        <p class="modal__title">Расскажите о своем проекте</p>
+        <p class="modal__desc">Заполните все поля, и я свяжусь с вами в ближайшее время</p>
+        <div class="form__blok _modal">
+            <form class="form__form" action="post">
+                <label for="phone">Телефон или почта:</label>
+                <input class="form__input" name="phone" placeholder="Введите телефон" id="phone">
+                <label for="connection">Выберите удобный способ связи:</label>
+                <select class="form__select" id="connection">
+                    <option class="form__option" value="telegram" selected>Telegram</option>
+                    <option class="form__option" value="whatsapp">WhatsApp</option>
+                    <option class="form__option" value="viber" >Viber</option>
+                    <option class="form__option" value="phone">Звонок на телефон</option>
+                    <option class="form__option" value="sms">SMS сообщение</option>
+                </select>
+                <button class="form__btn" type="submit" name="submit">Отправить</button>
+            </form>
+        </div>
         <button class="modal-close" onclick="closeModal()"></button>
     </div>
     
