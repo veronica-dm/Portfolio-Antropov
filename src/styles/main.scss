@@ -598,7 +598,7 @@ p, h1, h2, h3 {
 
     &__descblok {
         
-        flex-basis: 51%;
+        flex-basis: 50%;
     }
 
     &__desc {
@@ -1138,16 +1138,19 @@ p, h1, h2, h3 {
     }
 
     &__input {
-        background-color: rgba($lightgrey, .2);
+        background-color: rgba($lightgrey, .1);
         border: none;
         padding: 24px 20px;
         width: 100%;
         box-sizing: border-box;
         margin-bottom: 20px;
+        &:focus {
+            color: $lightgrey;
+        }
     }
 
     &__select {
-        background: rgba($lightgrey, .2);
+        background: rgba($lightgrey, .1);
         color:$lightgrey;
         border: none;
         outline: none;
@@ -1166,16 +1169,22 @@ p, h1, h2, h3 {
         
         &:hover {
             cursor: pointer;
+            
         }
     }
 
     &__option {
         color: rgba($lightgrey, .7);
-        background: rgba($lightgrey, .2);
+        //background: rgba($lightgrey, .2);
+        background: #38383A;
+        border: 0;
         font-size: 12px;
-        padding: 18px 20px;
+        //padding: 18px 20px;
+        margin-bottom: 30px;
+        
         &:hover {
             color: #D40000;
+            background: none;
         }
     }
 
