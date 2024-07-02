@@ -681,7 +681,12 @@ p, h1, h2, h3 {
             @media(max-width:$r_tab) {
                 width:179px;
                 height:142px;
-                top: -1px;
+                top: -2px;
+                
+            }
+            @media(max-width:$r_mobile_500) {
+                
+                left: 32.5%;
             }
             
         }
