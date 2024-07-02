@@ -70,6 +70,7 @@ p, h1, h2, h3 {
     }
     &__link {
         font-size:clamp(10px, 5vw - 0.75rem, 14px);
+        transition: $tr;
     }
     
     
@@ -125,6 +126,7 @@ p, h1, h2, h3 {
 
     &__link {
         position: relative;
+        transition: $tr;
     }
 
     &__link:not(:last-child)::after {
@@ -191,8 +193,9 @@ p, h1, h2, h3 {
     gap:0;
     .nav-link {
         border-top: 1px solid rgba($lightgrey, .2);
-        padding: 20px 126px;
+        padding: 20px 116px;
         font-size: 26px;
+        transition: $tr;
     }
     .nav-link:nth-last-child(1) {
         border-bottom: 1px solid rgba($lightgrey, .2);
@@ -274,6 +277,7 @@ p, h1, h2, h3 {
             //font-size: 16px;
             font-size: clamp(12px, 5vw - 0.75rem, 16px);
             font-weight: 600;
+            transition: $tr;
         }
         @media (hover: hover) {
             &:hover {
@@ -398,6 +402,7 @@ p, h1, h2, h3 {
         //font-size: 16px;
         font-size: clamp(12px, 5vw - 0.75rem, 16px);
         z-index: 1;
+        transition: $tr;
     }
 
     &__contacts-item._modal {
@@ -799,6 +804,7 @@ p, h1, h2, h3 {
         // background-color: rgb(0, 0, 0);
         // mix-blend-mode: multiply;
         filter: grayscale(100%);
+        transition: $tr;
         @media(max-width:$r_tab) {
             width: 31px;
             height: 24px;
@@ -1171,9 +1177,10 @@ p, h1, h2, h3 {
         font-size: clamp(12px, 5vw - 0.75rem, 16px);
         font-weight: 700;
         border:0;
-        padding: 24px 236px;
+        padding: 24px;
         width: 100%;
         margin-top: 15px;
+        transition: $tr;
         @media (hover: hover) {
             &:hover {
                 cursor: pointer;
