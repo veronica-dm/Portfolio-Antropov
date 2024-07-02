@@ -889,6 +889,11 @@ p, h1, h2, h3 {
             padding-top: 40px;
             padding-bottom: 40px;
         }
+        &:nth-child(even) {
+            .price__price::before {
+                display: none;
+            }
+        }
     }
 
     &__left {
