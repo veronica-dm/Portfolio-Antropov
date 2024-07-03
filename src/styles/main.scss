@@ -842,6 +842,55 @@ p, h1, h2, h3 {
         
     }
 
+    &__html5 {
+        position: relative;
+        @media (hover: hover) {
+            &:hover {
+            .technologies__tooltiphtml5 {
+                visibility: visible;
+                }
+                @media(max-width:$r_tab) {
+                    .technologies__tooltiphtml5 {
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+       
+        
+    }
+
+    
+
+    &__tooltiphtml5 {
+        visibility: hidden;
+        //width: 232px;
+        width: 200%;
+        height: 100%;
+        background-color: $accent;
+        color: $lightgrey;
+        font-size: 10px;
+        text-align: center;
+        padding: 35px 15px;
+        position: absolute;
+        z-index: 1;
+        right: -65%;
+        bottom: 10%;
+        top:120%;
+        &::after {
+            content: " ";
+            position: absolute;
+            bottom: 100%;  /* At the top of the tooltip */
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent $accent transparent;
+        }
+    }
+    
+
+
     &__item img{
         width: 105px;
         height: 84px;
