@@ -216,6 +216,8 @@ p, h1, h2, h3 {
     padding: 80px 10px 40px 10px;
     position: absolute;
     //top: -800px;
+    top:0;
+    display: none;
     left:0;
     right:0;
     margin: 0 auto;
@@ -232,7 +234,9 @@ p, h1, h2, h3 {
     background-color: $dark;
     padding: 55px 20px 0 20px;
     position: absolute;
-    top: 8000px;
+    //top: 8000px;
+    top:0;
+    display: none;
     left:0;
     right:0;
     margin: 0 auto;
