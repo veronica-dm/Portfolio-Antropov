@@ -842,12 +842,14 @@ p, h1, h2, h3 {
         
     }
 
-    &__html5 {
+    &__tooltip {
         position: relative;
         @media (hover: hover) {
             &:hover {
+                cursor: pointer;
             .technologies__tooltiphtml5 {
                 visibility: visible;
+                
                 }
                 @media(max-width:$r_tab) {
                     .technologies__tooltiphtml5 {
