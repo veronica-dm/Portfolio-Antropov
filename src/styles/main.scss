@@ -6,6 +6,13 @@
     margin: 0;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
 
 body {
     font-family: $font;
@@ -211,13 +218,14 @@ p, h1, h2, h3 {
 }
 
 .modalMenu {
-    display: block;
+    //display: block;
+    z-index: 20;
     background-color: $dark;
     padding: 80px 10px 40px 10px;
     position: absolute;
     //top: -800px;
     top:0;
-    display: none;
+    //display: none;
     left:0;
     right:0;
     margin: 0 auto;
@@ -229,14 +237,25 @@ p, h1, h2, h3 {
 
 }
 
+.modal-wrapper {
+    background-color: rgba(#38383a, 0.8);
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    z-index: 10;
+}
+
 .modal {
-    display: block;
+    //display: block;
     background-color: $dark;
     padding: 55px 20px 0 20px;
     position: absolute;
     //top: 8000px;
-    top:0;
-    display: none;
+    top:20%;
+    z-index: 20;
+    //display: none;
     left:0;
     right:0;
     margin: 0 auto;
@@ -245,6 +264,9 @@ p, h1, h2, h3 {
     max-width: 600px;
     box-sizing: border-box;
     transform: $tr;
+    @media(max-width:$r_tab) {
+        top:10%;
+    }
 
     &__title {
         font-size: 22px;
@@ -277,6 +299,20 @@ p, h1, h2, h3 {
     right: 20px;
 }
 
+.modalMenu-close {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/ui/close.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border:none; 
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
 .discuss-project {
         display: flex;
         align-items: center;
@@ -284,7 +320,7 @@ p, h1, h2, h3 {
         padding-bottom: 11px;
         border-bottom: 2px solid $dark;
         width: fit-content;
-        z-index: 2;
+        z-index: 5;
         &__write {
             //font-size: 16px;
             font-size: clamp(12px, 5vw - 0.75rem, 16px);

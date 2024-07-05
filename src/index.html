@@ -25,7 +25,7 @@
 
                  <div class="burger">
                     <a class="burger__contact" href="tel:+7923 777-77-77">8 923 777-77-77</a>
-                    <button class="burger__menu" onclick="openModalMenu()"></button>
+                    <button class="burger__menu" ></button>
                  </div>
                 
                 
@@ -42,7 +42,7 @@
                 </div>
                
                 <div class="discuss__social">
-                    <a class="discuss-project" href="#" onclick="openModal()">
+                    <a class="discuss-project" href="#">
                         <p class="discuss-project__write">Обсудить проект</p>
                         <img src="./images/ui/arrow.png" alt="стрелка">
                     </a>
@@ -330,7 +330,7 @@
                             <p class="price__title">Разработка<br>лэндинга или сайт визитки</p>
                             <p class="price__desc">Небольшой сайт состоящий из одной страницы</p>
                         </div>
-                        <a class="discuss-project dark" href="#" onclick="openModal()">
+                        <a class="discuss-project dark" href="#">
                             <p class="discuss-project__write">Обсудить проект</p>
                             <img src="./images/ui/arrow.png" alt="стрелка">
                         </a>
@@ -355,7 +355,7 @@
                             <p class="price__title">Разработка<br>корпоративного  сайта</p>
                             <p class="price__desc">Небольшой сайт с n-количеством страниц</p>
                         </div>
-                        <a class="discuss-project dark" href="#" onclick="openModal()">
+                        <a class="discuss-project dark" href="#">
                             <p class="discuss-project__write">Обсудить проект</p>
                             <img src="./images/ui/arrow.png" alt="стрелка">
                         </a>
@@ -380,7 +380,7 @@
                             <p class="price__title">Разработка<br>интернет - магазина</p>
                             <p class="price__desc">Полноценный каталог вашей продукции</p>
                         </div>
-                        <a class="discuss-project dark" href="#" onclick="openModal()">
+                        <a class="discuss-project dark" href="#">
                             <p class="discuss-project__write">Обсудить проект</p>
                             <img src="./images/ui/arrow.png" alt="стрелка">
                         </a>
@@ -464,8 +464,8 @@
  
 
     
-        
-    <div class="modalMenu" id="modalMenu">
+    <div class="modal-wrapper hide"></div>    
+    <div class="modalMenu hide" id="modalMenu">
         <nav class="nav _modal">
             <a href="#" class="nav-link" href="#about-id">Обо мне</a>
             <a href="#" class="nav-link" href="#portfolio-id">Портфолио</a>
@@ -482,28 +482,30 @@
             <a class="discuss__contacts-item _modal" href="#">Youtube</a>
             <a class="discuss__contacts-item _modal" href="#">Linkedin</a>
         </div> 
-        <button class="modal-close" onclick="closeModalMenu()"></button>
+        <button class="modalMenu-close"></button>
     </div>
-
-    <div class="modal" id="modal">
-        <p class="modal__title">Расскажите о своем проекте</p>
-        <p class="modal__desc">Заполните все поля, и я свяжусь с вами в ближайшее время</p>
-        <div class="form__blok _modal">
-            <form class="form__form" action="post">
-                <label for="phone">Телефон или почта:</label>
-                <input class="form__input" name="phone" placeholder="Введите телефон" id="phone">
-                <label for="connection">Выберите удобный способ связи:</label>
-                <select class="form__select" id="connection">
-                    <option class="form__option" value="telegram" selected>Telegram</option>
-                    <option class="form__option" value="whatsapp">WhatsApp</option>
-                    <option class="form__option" value="viber" >Viber</option>
-                    <option class="form__option" value="phone">Звонок на телефон</option>
-                    <option class="form__option" value="sms">SMS сообщение</option>
-                </select>
-                <button class="form__btn" type="submit" name="submit">Отправить</button>
-            </form>
+    
+        <div class="modal hide" id="modal">
+            <p class="modal__title">Расскажите о своем проекте</p>
+            <p class="modal__desc">Заполните все поля, и я свяжусь с вами в ближайшее время</p>
+            <div class="form__blok _modal">
+                <form class="form__form" action="post">
+                    <label for="phone">Телефон или почта:</label>
+                    <input class="form__input" name="phone" placeholder="Введите телефон" id="phone">
+                    <label for="connection">Выберите удобный способ связи:</label>
+                    <select class="form__select" id="connection">
+                        <option class="form__option" value="telegram" selected>Telegram</option>
+                        <option class="form__option" value="whatsapp">WhatsApp</option>
+                        <option class="form__option" value="viber" >Viber</option>
+                        <option class="form__option" value="phone">Звонок на телефон</option>
+                        <option class="form__option" value="sms">SMS сообщение</option>
+                    </select>
+                    <button class="form__btn" type="submit" name="submit">Отправить</button>
+                </form>
+            </div>
+            <button class="modal-close"></button>
         </div>
-        <button class="modal-close" onclick="closeModal()"></button>
+        
     </div>
     
     
