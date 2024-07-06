@@ -731,10 +731,15 @@ p, h1, h2, h3 {
             left: 31.5%;
             top: 0;
             z-index: -1;
+            @media(max-width:$r_desk_1190) {
+                left: 31.9%;
+                width:429px;
+            }
             @media(max-width:$r_tab) {
-                width:179px;
+                width:182px;
                 height:142px;
                 top: -2px;
+                left: 31.1%;
                 
             }
             @media(max-width:$r_mobile_500) {
